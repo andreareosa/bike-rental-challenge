@@ -14,7 +14,7 @@ This challenge is based on a modified version of the Kaggle competition [Bike Sh
 
 ### 1. bikes_rental.csv
 This dataset contains hourly rental data for the years 2011 and 2012. The columns are as follows:
-- `datetime`: Hourly date + timestamp.
+- `datetime`: hourly timestamp.
 - `season`: Season indicator (1 = spring, 2 = summer, 3 = fall, 4 = winter).
 - `workingday`: Indicates whether the day is neither a weekend nor a holiday.
 - `weather`: General weather condition (Nice, Cloudy, Light rain, Heavy rain).
@@ -39,7 +39,7 @@ The data extraction process included the following two steps:
 ### 2. Data Cleaning
 To ensure data consistency and readability, I performed the following data cleaning tasks using pandas:
 - Converted the `datetime` column from string format to `datetime` format.
-- Mapped `season` numbers to their corresponding season names for better readability.
+- Cleaned and mapped `season` numbers to their corresponding season names for better readability.
 - Cleaned the `workingday` column by removing any quotes and casting the values as integers.
 
 ### 3. Analysis
